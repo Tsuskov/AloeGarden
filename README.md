@@ -2,7 +2,7 @@
   <img src="Screenshots/icon.png" width="120" alt="Aloe Garden app icon" />
 </p>
 
-<h1 align="center">Aloe Garden 🌱</h1>
+<h1 align="center">Aloe Garden </h1>
 
 <p align="center"><i>Lies dich in einen Garten — grow a garden by reading.</i></p>
 
@@ -23,14 +23,14 @@ Lock Screen **widgets** let you start a reading session in a single tap.
 The plant artwork is drawn entirely in SwiftUI — there are no image assets for
 the garden, just `Shape`s, gradients, and a little math.
 
-## ✨ Features
+##  Features
 
-- 🪴 **A living garden** — your aloe grows and blooms as your total reading time climbs through levels.
-- 📖 **Focus sessions** — a calm, full-screen reading timer that gently discourages leaving the app.
-- 🔒 **Honest by design** — leave the app during a session and it won't be credited.
-- 📊 **Real progress tracking** — current streak, weekly chart, and recent-session history, persisted locally.
-- 📲 **Home & Lock Screen widgets** — small, medium, and all three lock-screen accessory sizes. Tap to start reading.
-- 🎨 **Pure SwiftUI art** — every leaf, bloom, and pot is vector-drawn.
+-  **A living garden** — your aloe grows and blooms as your total reading time climbs through levels.
+-  **Focus sessions** — a calm, full-screen reading timer that gently discourages leaving the app.
+-  **Honest by design** — leave the app during a session and it won't be credited.
+-  **Real progress tracking** — current streak, weekly chart, and recent-session history, persisted locally.
+-  **Home & Lock Screen widgets** — small, medium, and all three lock-screen accessory sizes. Tap to start reading.
+-  **Pure SwiftUI art** — every leaf, bloom, and pot is vector-drawn.
 
 ## 📸 Screenshots
 
@@ -49,7 +49,7 @@ straight into a new reading session:
 Every tap opens `aloegarden://startSession`, which the app handles to launch a
 focus session.
 
-## 🏗 How it works
+##  How it works
 
 - **Pure SwiftUI** app, no third-party dependencies.
 - The app and the **widget extension** share data through an **App Group**
@@ -59,7 +59,7 @@ focus session.
   reloaded after every session.
 - Widget taps reach the app via a custom **URL scheme** (`aloegarden://`).
 
-## 🚀 Build & Run
+##  Build & Run
 
 Requirements: **Xcode 26+**, iOS 26 SDK.
 
@@ -83,7 +83,7 @@ To run on a **physical device** (and get live data in the widgets):
 > stats and widgets aren't empty while you explore. It is compiled out of
 > Release builds.
 
-## 🗂 Project layout
+##  Project layout
 
 ```
 AloeGarden/            App target — SwiftUI app, garden art, focus session, stats
@@ -92,6 +92,6 @@ AloeGarden.xcodeproj/  Xcode project (two targets + App Group + URL scheme)
 Screenshots/           Images used in this README
 ```
 
-## 📄 License
+##  License
 
 Released under the [MIT License](LICENSE).
