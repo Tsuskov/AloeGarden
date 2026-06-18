@@ -6,14 +6,75 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A9A2EA532FE3E5E100A1A4B3 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A2EA522FE3E5E100A1A4B3 /* WidgetKit.framework */; };
+		A9A2EA552FE3E5E100A1A4B3 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A2EA542FE3E5E100A1A4B3 /* SwiftUI.framework */; };
+		A9A2EA662FE3E5E200A1A4B3 /* AloegardenExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A9A2EA502FE3E5E100A1A4B3 /* AloegardenExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9A2EA642FE3E5E200A1A4B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9A2EA292FE2FF1D00A1A4B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9A2EA4F2FE3E5E100A1A4B3;
+			remoteInfo = AloegardenExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A9A2EA6B2FE3E5E200A1A4B3 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A9A2EA662FE3E5E200A1A4B3 /* AloegardenExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A9A2EA312FE2FF1D00A1A4B3 /* AloeGarden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AloeGarden.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A2EA502FE3E5E100A1A4B3 /* AloegardenExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AloegardenExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A2EA522FE3E5E100A1A4B3 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A9A2EA542FE3E5E100A1A4B3 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A9A2EA672FE3E5E200A1A4B3 /* Exceptions for "AloeGardenWidget" folder in "AloegardenExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A9A2EA4F2FE3E5E100A1A4B3 /* AloegardenExtension */;
+		};
+		AAAA0000000000000000A001 /* Exceptions for "AloeGarden" folder in "AloeGarden" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A9A2EA302FE2FF1D00A1A4B3 /* AloeGarden */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A9A2EA332FE2FF1D00A1A4B3 /* AloeGarden */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AAAA0000000000000000A001 /* Exceptions for "AloeGarden" folder in "AloeGarden" target */,
+			);
 			path = AloeGarden;
+			sourceTree = "<group>";
+		};
+		A9A2EA562FE3E5E100A1A4B3 /* AloeGardenWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A9A2EA672FE3E5E200A1A4B3 /* Exceptions for "AloeGardenWidget" folder in "AloegardenExtension" target */,
+			);
+			path = AloeGardenWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,6 +87,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9A2EA4D2FE3E5E100A1A4B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A2EA552FE3E5E100A1A4B3 /* SwiftUI.framework in Frameworks */,
+				A9A2EA532FE3E5E100A1A4B3 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				A9A2EA332FE2FF1D00A1A4B3 /* AloeGarden */,
+				A9A2EA562FE3E5E100A1A4B3 /* AloeGardenWidget */,
+				A9A2EA512FE3E5E100A1A4B3 /* Frameworks */,
 				A9A2EA322FE2FF1D00A1A4B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +113,18 @@
 			isa = PBXGroup;
 			children = (
 				A9A2EA312FE2FF1D00A1A4B3 /* AloeGarden.app */,
+				A9A2EA502FE3E5E100A1A4B3 /* AloegardenExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A9A2EA512FE3E5E100A1A4B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9A2EA522FE3E5E100A1A4B3 /* WidgetKit.framework */,
+				A9A2EA542FE3E5E100A1A4B3 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +137,12 @@
 				A9A2EA2D2FE2FF1D00A1A4B3 /* Sources */,
 				A9A2EA2E2FE2FF1D00A1A4B3 /* Frameworks */,
 				A9A2EA2F2FE2FF1D00A1A4B3 /* Resources */,
+				A9A2EA6B2FE3E5E200A1A4B3 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A9A2EA652FE3E5E200A1A4B3 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				A9A2EA332FE2FF1D00A1A4B3 /* AloeGarden */,
@@ -69,6 +153,28 @@
 			productName = AloeGarden;
 			productReference = A9A2EA312FE2FF1D00A1A4B3 /* AloeGarden.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A9A2EA4F2FE3E5E100A1A4B3 /* AloegardenExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9A2EA682FE3E5E200A1A4B3 /* Build configuration list for PBXNativeTarget "AloegardenExtension" */;
+			buildPhases = (
+				A9A2EA4C2FE3E5E100A1A4B3 /* Sources */,
+				A9A2EA4D2FE3E5E100A1A4B3 /* Frameworks */,
+				A9A2EA4E2FE3E5E100A1A4B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A9A2EA562FE3E5E100A1A4B3 /* AloeGardenWidget */,
+			);
+			name = AloegardenExtension;
+			packageProductDependencies = (
+			);
+			productName = AloegardenExtension;
+			productReference = A9A2EA502FE3E5E100A1A4B3 /* AloegardenExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +187,9 @@
 				LastUpgradeCheck = 2630;
 				TargetAttributes = {
 					A9A2EA302FE2FF1D00A1A4B3 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					A9A2EA4F2FE3E5E100A1A4B3 = {
 						CreatedOnToolsVersion = 26.3;
 					};
 				};
@@ -100,12 +209,20 @@
 			projectRoot = "";
 			targets = (
 				A9A2EA302FE2FF1D00A1A4B3 /* AloeGarden */,
+				A9A2EA4F2FE3E5E100A1A4B3 /* AloegardenExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A9A2EA2F2FE2FF1D00A1A4B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9A2EA4E2FE3E5E100A1A4B3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +239,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9A2EA4C2FE3E5E100A1A4B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9A2EA652FE3E5E200A1A4B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9A2EA4F2FE3E5E100A1A4B3 /* AloegardenExtension */;
+			targetProxy = A9A2EA642FE3E5E200A1A4B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A9A2EA3A2FE2FF1E00A1A4B3 /* Debug */ = {
@@ -177,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -234,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -249,10 +381,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AloeGarden/AloeGarden.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Y42Z5GFC2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AloeGarden/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -280,10 +415,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AloeGarden/AloeGarden.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Y42Z5GFC2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AloeGarden/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +437,68 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9A2EA692FE3E5E200A1A4B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = AloeGardenWidget/AloeGardenWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Y42Z5GFC2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AloeGardenWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Aloegarden;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tm.AloeGarden.Aloegarden;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9A2EA6A2FE3E5E200A1A4B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = AloeGardenWidget/AloeGardenWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Y42Z5GFC2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AloeGardenWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Aloegarden;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tm.AloeGarden.Aloegarden;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,6 +523,15 @@
 			buildConfigurations = (
 				A9A2EA3D2FE2FF1E00A1A4B3 /* Debug */,
 				A9A2EA3E2FE2FF1E00A1A4B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9A2EA682FE3E5E200A1A4B3 /* Build configuration list for PBXNativeTarget "AloegardenExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9A2EA692FE3E5E200A1A4B3 /* Debug */,
+				A9A2EA6A2FE3E5E200A1A4B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
